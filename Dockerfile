@@ -9,5 +9,5 @@ ADD wso2am-2.0.0 /opt/wso2am-2.0.0
 WORKDIR /opt/wso2am-2.0.0/bin
 
 EXPOSE 9443 8280 8243 10397 7711
-
+VOLUME ["/opt/wso2am-2.0.0"]
 ENTRYPOINT ["/opt/wso2am-2.0.0/bin/wso2server.sh"]
